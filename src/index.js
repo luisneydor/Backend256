@@ -17,7 +17,7 @@ app.use(express.json());
 app.use('/api/clientes', require('../routes/rutasCliente')); /////
 
 //ruta para consumir la api producto
-///app.use('/api/productos', require('../routes/rutasProducto'));
+app.use('/api/productos', require('../routes/rutasProducto'));
 
 // ruta pqara verificar nuestro servidor rn la web
 app.get('/', (req, res) => {
