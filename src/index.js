@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 //ruta para consumir la api clienye 
-//app.use('/api/clientes', require('../routes/rutasCliente')); /////
+app.use('/api/clientes', require('../routes/rutasCliente')); /////
 
 //ruta para consumir la api producto
 app.use('/api/productos', require('../routes/rutasProducto'));
